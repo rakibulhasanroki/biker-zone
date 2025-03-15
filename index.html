@@ -26,10 +26,104 @@
       .poppins-font {
         font-family: "Poppins", sans-serif;
       }
+      @layer base {
+        .bg-custom-color {
+          background-color: #e76f51;
+        }
+        .custom-color {
+          color: #e76f51;
+        }
+        .header-bg {
+          background-color: #264653;
+        }
+        .border-custom-color {
+          border-color: #e76f51;
+        }
+      }
     </style>
   </head>
   <body class="poppins-font">
-    <header></header>
+    <header class="header-bg">
+      <section class="xl:container w-9/10 mx-auto">
+        <!-- navbar -->
+        <nav class="pt-4">
+          <div class="navbar p-0">
+            <div class="flex-1">
+              <div class="dropdown">
+                <div
+                  tabindex="0"
+                  role="button"
+                  class="btn btn-ghost hover:border-[#e76f51] focus:border-[#e76f51] shadow-none bg-transparent lg:hidden"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-7 w-7 custom-color"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16"
+                    />
+                  </svg>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-custom-color rounded-box z-1 mt-3 w-52 p-2 shadow text-white font-medium text-base"
+                >
+                  <li><a>Home</a></li>
+                  <li><a>Shop</a></li>
+                  <li><a>News</a></li>
+                  <li><a>Contact</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="hidden lg:flex mr-20 text-white font-medium text-base">
+              <ul class="menu menu-horizontal px-1">
+                <li><a>Home</a></li>
+                <li><a>Shop</a></li>
+                <li><a>News</a></li>
+                <li><a>Contact</a></li>
+              </ul>
+            </div>
+            <div class="">
+              <a
+                class="btn btn-error bg-[#e76f51] text-white font-medium text-base"
+                >Login</a
+              >
+            </div>
+          </div>
+        </nav>
+        <!-- banner -->
+        <div
+          class="flex flex-col lg:flex-row items-center justify-between gap-12 lg:pt-16 lg:pb-24 pt-4 pb-4"
+        >
+          <div class="text-white flex-1 space-y-5 self-start lg:self-auto">
+            <p class="text-base leading-5 font-light">
+              Computer-controlled digital transistorized with electronic advance
+            </p>
+            <h1 class="font-semibold text-4xl lg:text-5xl">Honda CBR 300R</h1>
+            <p class="text-base font-light">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
+            <button>
+              <a
+                class="btn btn-error bg-[#e76f51] text-white font-medium text-base"
+                >Purchase</a
+              >
+            </button>
+          </div>
+          <div class="flex-1 justify-items-end">
+            <img src="./images/banner.png" alt="" class="" />
+          </div>
+        </div>
+      </section>
+    </header>
     <main></main>
     <footer></footer>
   </body>
